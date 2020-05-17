@@ -1,0 +1,76 @@
+<section id="estimate" class="page-section">
+  <h1
+    class="page-section-heading text-center text-uppercase mb-0 text-test"
+    style="padding-top: 90px;"
+  >
+     Estimate Now
+  </h1>
+
+  <div class="divider-custom">
+    <div class="divider-custom-line"></div>
+    <div class="divider-custom-icon">
+      <i class="fas fa-star"></i>
+    </div>
+    <div class="divider-custom-line"></div>
+  </div>
+
+
+  <app-step1
+    *ngIf="show[0]"
+    (selected)="onSelect($event)"
+    (removed)="onRemove($event)"
+  ></app-step1>
+  <app-step2
+    *ngIf="show[1]"
+    [selectedApp]="choicesAppName()"
+    (toggled)="onToggle($event)"
+    (untoggled)="onUntoggled($event)"
+  >
+  </app-step2>
+  <app-step3
+    *ngIf="show[2]"
+    [suppClickObserver]="suppClickObserver"
+    (selectedSupp)="onSelectSupp($event)"
+    (removedSupp)="onRemoveSupp($event)"
+  ></app-step3>
+  <app-step4
+    *ngIf="show[3]"
+    [app]="choicesApp"
+    [func]="choicesFunc"
+    [supp]="choicesSupp"
+  ></app-step4>
+  <app-step5 *ngIf="show[4]" [data]="price"> </app-step5>
+  <div class="mb-5" style="display: flex; justify-content: center;">
+    <button
+      class="btn btn-danger btn-lg mr-5"
+      *ngIf="!show[4]"
+      [disabled]="show[0]"
+      (click)="onBack()"
+      style="max-width: 77px; max-height: 48px;"
+    >
+      Back
+    </button>
+    <button
+      *ngIf="!show[3] && !show[4]"
+      (click)="onNext()"
+      [disabled]="nextDisabled"
+      class="btn btn-primary btn-lg"
+    >
+      Next
+    </button>
+    <button
+      *ngIf="show[3]"
+      (click)="onEstimate()"
+      class="btn btn-success btn-lg"
+    >
+      Estimate your projet cost
+    </button>
+    <button
+      *ngIf="show[4]"
+      (click)="onNewEstimation()"
+      class="btn btn-primary btn-lg"
+    >
+      Start a new estimation
+    </button>
+  </div>
+</section>

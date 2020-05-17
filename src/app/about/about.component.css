@@ -1,0 +1,67 @@
+/* 
+.sub-about {
+  font-style: italic;
+  margin-bottom: 75px;
+}
+
+/* The actual timeline (the vertical ruler) */
+/* .timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+
+/* The actual timeline (the vertical ruler) */
+/* .timeline::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background-color: #FFC600;
+  top: 95px;
+  bottom: 125px;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container-left {
+  width: 300px;
+  height: 125px;
+  position: relative;
+  left: 30%;
+  margin-bottom: 125px;
+}
+
+.container-right {
+  width: 300px;
+  height: 125px;
+  position: relative;
+  left: 60%;
+  margin-bottom: 125px;
+}
+
+.img-timeline-left {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: solid 5px #FFC600;
+    left: 63.5%;
+    position: absolute;
+}
+
+.img-timeline-right {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: solid 5px #FFC600;
+    left: -56%;
+    position: absolute;
+}
+
+.img-timeline-left:hover {
+    transform: scale(1.1);
+}
+
+.img-timeline-right:hover {
+    transform: scale(1.1);
+} */
+

@@ -1,0 +1,56 @@
+<section
+  *ngIf="items && items.length > 0"
+  class="page-section"
+  id="portfolio"
+  style="background-color: #f8f9fa;"
+>
+  <h1
+    class="page-section-heading text-center text-uppercase mb-0 text-test"
+    style="padding-top: 90px;"
+  >
+    Portfolio
+  </h1>
+
+  <div class="divider-custom">
+    <div class="divider-custom-line"></div>
+    <div class="divider-custom-icon">
+      <i class="fas fa-star"></i>
+    </div>
+    <div class="divider-custom-line"></div>
+  </div>
+
+  <div class="text-center">
+    <div class="row d-flex justify-content-center pb-5">
+      <app-portfolio-item *ngFor="let item of items" [item]="item">
+      </app-portfolio-item>
+    </div>
+    <div class="row d-flex justify-content-center pb-5">
+      <div class="col-3">
+        <div class="card mb-3 widget-content bg-night-fade">
+          <div class="widget-content-wrapper text-white">
+            <div class="widget-content-left">
+              <div class="widget-heading">Total Orders</div>
+              <div class="widget-subheading">Last year expenses</div>
+            </div>
+            <div class="widget-content-right">
+              <div class="widget-numbers text-white"><span>1896</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card mb-3 widget-content bg-happy-green">
+          <div class="widget-content-wrapper text-white">
+            <div class="widget-content-left">
+              <div class="widget-heading">Clients</div>
+              <div class="widget-subheading">Total clients Profit</div>
+            </div>
+            <div class="widget-content-right">
+              <div class="widget-numbers text-white"><span>$560</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

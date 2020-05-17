@@ -1,0 +1,111 @@
+<section class="page-section" id="contact" style="padding-top: 75px; margin-top: 150px; margin-bottom: 100px">
+  <h1
+    class="page-section-heading text-center text-uppercase mb-0 text-test"
+  >
+    Contact Us
+  </h1>
+
+  <div class="divider-custom">
+    <div class="divider-custom-line"></div>
+    <div class="divider-custom-icon">
+      <i class="fas fa-star"></i>
+    </div>
+    <div class="divider-custom-line"></div>
+  </div>
+
+  <!-- ********* -->
+
+  <div class="row">
+    <div class="col-lg-8 mx-auto try-hover">
+      <form id="contactForm" name="sentMessage" novalidate="novalidate">
+        <div class="control-group error">
+          <div class="form-group floating-label-form-group controls mb-0 pb-2">
+            <label>Name</label
+            ><input
+              class="form-control"
+              id="name"
+              type="text"
+              placeholder="Name"
+              required="required"
+              data-validation-required-message="Please enter your name."
+              aria-invalid="true"
+            />
+            <span class="help-block text-danger d-none"
+              ><ul role="alert">
+                <li>Please enter your name.</li>
+              </ul></span
+            >
+          </div>
+        </div>
+        <div class="control-group error">
+          <div class="form-group floating-label-form-group controls mb-0 pb-2">
+            <label>Email Address</label
+            ><input
+              class="form-control"
+              id="email"
+              type="email"
+              placeholder="Email Address"
+              required="required"
+              data-validation-required-message="Please enter your email address."
+              aria-invalid="true"
+            />
+            <span class="help-block text-danger d-none"
+              ><ul role="alert">
+                <li>Please enter your email address.</li>
+              </ul></span
+            >
+          </div>
+        </div>
+        <div class="control-group error">
+          <div class="form-group floating-label-form-group controls mb-0 pb-2">
+            <label>Phone Number</label
+            ><input
+              class="form-control"
+              id="phone"
+              type="tel"
+              placeholder="Phone Number"
+              required="required"
+              data-validation-required-message="Please enter your phone number."
+              aria-invalid="true"
+            />
+            <span class="help-block text-danger d-none"
+              ><ul role="alert">
+                <li>Please enter your phone number.</li>
+              </ul></span
+            >
+          </div>
+        </div>
+        <div class="control-group error">
+          <div class="form-group floating-label-form-group controls mb-0 pb-2">
+            <label>Message</label
+            ><textarea
+              class="form-control"
+              id="message"
+              rows="5"
+              placeholder="Message"
+              required="required"
+              data-validation-required-message="Please enter a message."
+              aria-invalid="true"
+            ></textarea>
+            <span class="help-block text-danger d-none"
+              ><ul role="alert">
+                <li>Please enter a message.</li>
+              </ul></span
+            >
+          </div>
+        </div>
+        <br />
+        <div id="success"></div>
+        <div class="form-group">
+          <button
+            class="btn btn-success btn-lg"
+            id="sendMessageButton"
+            type="submit"
+          >
+            Send
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

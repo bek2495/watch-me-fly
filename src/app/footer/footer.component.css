@@ -1,0 +1,27 @@
+.btn-social {
+    border-radius: 100%;
+    display: inline-flex;
+    width: 3.25rem;
+    height: 3.25rem;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-link {
+    color: #FFC600;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.text-footer {
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 700;
+  }
+
+  .text-footer1 {
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 400;
+  }

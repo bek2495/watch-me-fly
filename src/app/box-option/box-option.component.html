@@ -1,0 +1,51 @@
+<div class="col">
+  <div
+    *ngIf="!box.hover && !box.click"
+    (mouseover)="onHover()"
+    (mouseout)="onMouseOut()"
+    (click)="onClick()"
+  >
+    <div class="card-border mb-3 card card-body text-front">
+      <h5 class="card-title primary-font">{{ boxOption.name }}</h5>
+    </div>
+  </div>
+  <div
+    *ngIf="box.hover"
+    (mouseover)="onHover()"
+    (mouseout)="onMouseOut()"
+    (click)="onClick()"
+    style="cursor: pointer;"
+  >
+    <div class="mb-2 mr-2 badge badge-dot badge-success badge-position">
+      Success
+    </div>
+    <div class="card-border mb-3 card card-body card-2 text-front secondary-font">
+      <div style="color: white;">
+        {{ boxOption.description }}
+      </div>
+    </div>
+  </div>
+  <div
+    *ngIf="box.click"
+    (mouseover)="onHover()"
+    (mouseout)="onMouseOut()"
+    (click)="onClick()"
+    style="cursor: pointer;"
+  >
+    <div
+      class="card-border mb-3 card card-body"
+      style="
+        height: 140px;
+        width: 300px;
+        background-color: #003580;
+        align-items: center;
+      "
+    >
+      <h5 class="card-title primary-font" style="color: white;">{{ boxOption.name }}</h5>
+      <i
+        class="fas fa-check-circle"
+        style="color: #ffc600; font-size: 60px;"
+      ></i>
+    </div>
+  </div>
+</div>

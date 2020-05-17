@@ -1,0 +1,34 @@
+<div
+  class="col"
+  style="
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+  "
+>
+  <div
+    class="card-border mb-3 card-body text-front card-size"
+    style="display: flex; justify-content: space-between; align-items: center;"
+    [class.min-size]="sliderShow"
+  >
+    <h5 class="primary-font" style="width: 150px;">{{ boxToggle.name }}</h5>
+    <label class="switch">
+      <input (click)="onSliderShow()" type="checkbox" />
+      <span class="slider round"></span>
+    </label>
+    <div *ngIf="sliderShow" class="mr-2">
+      <p class="mr-2 secondary-font" style="text-align: center;">Range slider</p>
+      <input
+        class="mr-2"
+        type="range"
+        id="vol"
+        name="vol"
+        min="0"
+        [max]="boxToggle.maxNum"
+        [(ngModel)]="selected"
+        (change)="onChange()"
+      />
+      <span style="position: absolute;" class="mr-2">{{ selected }}</span>
+    </div>
+  </div>
+</div>

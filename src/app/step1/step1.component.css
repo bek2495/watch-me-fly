@@ -1,0 +1,38 @@
+
+.card-border {
+    box-shadow: 0 0 0 transparent;
+    border-width: 1px;
+    border-color: rgba(13,27,62,0.7) ;
+}
+.card-header, .card-title {
+    text-transform: uppercase;
+    color: rgba(13,27,62,0.7);
+    font-weight: bold;
+    font-size: .88rem;
+}
+
+.card-title {
+    margin-bottom: .75rem;
+}
+
+.card-2 {
+ background-color: rgba(13,27,62,0.7);   
+}
+
+.badge-dot {
+    text-indent: -999em;
+    padding: 0;
+    width: 14px;
+    height: 14px;
+    border: transparent solid 1px;
+    border-radius: 30px;
+    min-width: 2px;
+}
+
+.badge-position {
+    z-index: 1;
+    position: absolute;
+    left: 292px;
+    top: 12px;
+    border-color: white;
+}

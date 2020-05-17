@@ -1,0 +1,17 @@
+.nav-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 2px black;
+}
+
+.company-name {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-shadow: 2px 2px 2px black;
+}
+
+.nav-color {
+  background: #003580;
+}
+
+

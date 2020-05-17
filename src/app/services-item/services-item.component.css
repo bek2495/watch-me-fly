@@ -1,0 +1,11 @@
+.circle-img {
+    position: relative;
+    color: #FFC600;
+  }
+  
+  .border-circle {
+    border-style: solid;
+    border-color: #001B42;
+    border-radius: 50%;
+    border-width: thin;
+  }
