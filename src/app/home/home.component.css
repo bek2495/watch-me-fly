@@ -1,5 +1,5 @@
 .bg-home {
-  /* background-color: #F2F2F2; */
+  background-color: #F2F2F2;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.95;
@@ -16,6 +16,9 @@
   text-align: center;
   top: 35%;
   text-shadow: 2px 2px 2px #F1FAEE;
+  max-width: 700px; 
+  margin-left: 40px;
+   margin: 0 auto;
 }
 
 .main-text-home {

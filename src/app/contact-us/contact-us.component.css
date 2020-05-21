@@ -1,3 +1,8 @@
+.contact-us-position {
+  padding-top: 75px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
 
 .floating-label-form-group {
   position: relative;
@@ -30,6 +35,6 @@
 
 .try-hover:hover {
   transform: scale(1.03);
-  box-shadow: 0px 0px 7px 0px rgba(142,142,148,1);
+  box-shadow: 0px 0px 7px 0px rgba(142, 142, 148, 1);
   border-radius: 10px;
 }
